@@ -7,7 +7,7 @@ const Color gradientBrightPeach = Color.fromRGBO(254, 175, 143, 1);
 const Color gradientViolet = Color.fromRGBO(113, 34, 237, 1);
 const Color gradientPurpleLight = Color.fromRGBO(154, 80, 211, 1);
 
-class QuizOlympicsTheme {
+class GroceryTheme {
   static _ThemeColor themeColor = _ThemeColor(
     accentColor: Color(0xFFFCBB6D),
     backgroundColorDark: Colors.white,

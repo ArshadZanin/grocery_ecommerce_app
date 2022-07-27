@@ -8,8 +8,6 @@ import 'package:shop_grocery_app/views/home/home_view.dart';
 
 import 'core/locator.dart';
 
-
-
 void main() async {
   try {
     WidgetsFlutterBinding.ensureInitialized();
@@ -17,7 +15,7 @@ void main() async {
 
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
-        statusBarColor: QuizOlympicsTheme.themeColor.primaryColorLight,
+        statusBarColor: GroceryTheme.themeColor.primaryColorLight,
       ),
     );
     SystemChrome.setPreferredOrientations([
@@ -35,24 +33,21 @@ void main() async {
 class MainApplication extends StatelessWidget {
   const MainApplication({Key? key}) : super(key: key);
 
-
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: QuizOlympicsTheme.themeColor.primaryColorLight,
-        primaryColorDark: QuizOlympicsTheme.themeColor.primaryColorDark,
-        backgroundColor: QuizOlympicsTheme.themeColor.backgroundColorDark,
-        canvasColor: QuizOlympicsTheme.themeColor.backgroundColorDark,
-        cardColor:
-            QuizOlympicsTheme.themeColor.primaryColorLight.withAlpha(160),
+        primaryColor: GroceryTheme.themeColor.primaryColorLight,
+        primaryColorDark: GroceryTheme.themeColor.primaryColorDark,
+        backgroundColor: GroceryTheme.themeColor.backgroundColorDark,
+        canvasColor: GroceryTheme.themeColor.backgroundColorDark,
+        cardColor: GroceryTheme.themeColor.primaryColorLight.withAlpha(160),
         appBarTheme: AppBarTheme(
-          color: QuizOlympicsTheme.themeColor.primaryColorDark,
+          color: GroceryTheme.themeColor.primaryColorDark,
         ),
         buttonTheme: ButtonThemeData().copyWith(
-          buttonColor: QuizOlympicsTheme.themeColor.primaryColorLight,
+          buttonColor: GroceryTheme.themeColor.primaryColorLight,
           textTheme: ButtonTextTheme.primary,
         ),
         textTheme: TextTheme().copyWith(
@@ -71,7 +66,7 @@ class MainApplication extends StatelessWidget {
           caption: TextStyle(color: Colors.black),
         ),
         colorScheme: ColorScheme.fromSwatch()
-            .copyWith(secondary: QuizOlympicsTheme.themeColor.accentColor),
+            .copyWith(secondary: GroceryTheme.themeColor.accentColor),
       ),
       home: HomeView(),
     );
